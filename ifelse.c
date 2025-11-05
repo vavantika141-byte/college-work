@@ -50,11 +50,11 @@ int main()
 
     else if (n<0)
     {
-        printf("It is a negative number");
+        printf("It is a negative number\n");
         
     }
     else{
-        printf("It is 0");
+        printf("It is 0\n");
     }
     printf("out of if else statement\n");
     return 0;
