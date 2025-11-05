@@ -1,36 +1,31 @@
-#include <stdio.h>
-#include <math.h>
-
+#include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n, num, d, c = 0, sum = 0;
-
+    int n,num,d,c=0,sum=0;
     printf("Enter number: ");
     scanf("%d", &n);
+     num=n; //d=floor(log10(n)+1);
 
-    num = n;
-
-    if (n == 0)
-        c = 1;   // special case for 0
+    if(n==0)
+        c=1;  
     else
     {
-        while (n != 0)
+        while(n!=0)
         {
-            n = n / 10;
+            n=n/10;
             c++;
         }
     }
-
-    n = num;
-
-    while (n != 0)
+    n=num;
+    while(n!=0)
     {
-        d = n % 10;
-        sum = sum + (int)(pow(d, c) + 0.5);  
-        n = n / 10;
+        d=n%10;
+        sum=sum+(int)(pow(d,c)+0.5);  
+        n=n/10;
     }
 
-    if (sum == num)
+    if(sum==num)
         printf("Yes");
     else
         printf("No");
