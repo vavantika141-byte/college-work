@@ -1,5 +1,6 @@
+
 //convert the first letter of the word to uppercase by keeping all the letters unchanged
-#include<stdio.h>
+nclude<stdio.h>
 #include<ctype.h>
 int main()
 {
@@ -11,4 +12,4 @@ int main()
 
     return 0;
 
-}
+}#i
