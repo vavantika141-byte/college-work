@@ -3,24 +3,24 @@
 
 int main()
 {
-    int a, b;
-    printf("Enter range: ");
+    int a, b,n,num, d ,count, sum ;
+    printf("Enter range: "); 
     scanf("%d%d", &a, &b);
 
     for (int n=a; n<=b; n++)
     {
         int num=n;
-        int count = floor(log10(n)) + 1;
-        int sum=0;
+        count = floor(log10(n)) + 1;
+        sum=0;
  
-        while (num != 0)
+        while (num >0)
         { 
             int d = num % 10;
-            sum+=pow(d,count);
+            sum=sum + pow(d,count);
             num/=10;
         }
 
-        if (n==sum)
+        if (sum==n)
             printf("\n %d",n);
     }
 
